@@ -1,0 +1,180 @@
+<!-- Bootstrap-Powered HTML Page Contact-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Kean</title>
+  <link rel="stylesheet" type="text/css" href="AssetsHW2Bootstrap/CSSHW2Bootstrap/Reset.css">
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+  body{
+    background-image: url("AssetsHW2Bootstrap/ImagesHW2Bootstrap/naturalwhitebackground.png");
+  }
+  .navbar{
+    height: 50px;
+  }
+  #nameNav{
+    background: #4aaaa5;
+    color: #ffffff;
+    margin-left: 2px;
+  }
+  .nav-link{
+    background: #ffffff;
+    align-items: right;
+  }
+  #contactContainer{
+    margin-top: 50px;
+  }
+  #titleContact{
+    color: #4aaaa5;
+    background: #ffffff;
+  }
+  #HeaderContact{
+    border-bottom: 1px solid lightgrey;
+  }
+  #rowContactContents{
+    color: #666666;
+    background: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .list-group-item{
+    text-align: center;
+    color: #4aaaa5;
+  }
+  #footerContainer{
+    bottom: 0;
+    position: fixed;
+  }
+  .footer{
+    background: #666666;
+    height: 60px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 5px solid #4aaaa5;
+    padding: 20px;
+  }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" id="nameNav" href="#">Kean Amaral</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="HW2_bootstrap_about.html" Title="Page About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HW2_bootstrap_portfolio.html" Title="Page Portfolio">| Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" Title="Page Contact">| Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <div class ="container" id="contactContainer">
+    <div class="col-md-9" id="titleContact">
+      <h1 id="HeaderContact">Contact</h1>
+          <div class="row" id="rowContactContents">
+            <div class="col-md-9">
+              <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col">
+                      <label for="validationCustom01">First Name</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="First name">
+                    </div>
+                    <div class="col">
+                      <label for="validationCustom01">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email Email@Email.com">
+                </div>
+                <div class="form-group">
+                  <label for="inputcountry">Country</label>
+                  <select class="form-control form-control-lg" id="inputcountry">
+                    <option selected>Choose Country..</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message / Subject</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write something..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>              
+              </form>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+      <ul class="list-group" id="connectWithMe">
+        <li class="list-group-item">
+          Connect with Me
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="https://www.facebook.com" target="blank">
+                <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/facebook.png" height="50px" width="50px"
+                alt="Facebook" title="Click to Facebook">
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="https://www.linkedin.com" target="_blank">
+                <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/linkedin.png" height="50px" width="50px"
+                alt=LinkedIn title="Click to LinkedIn">
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/twitter.png" height="50px" width="50px"
+                alt="Twitter" title="Click to Twitter">
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer" id="footerContainer">
+    <footer class="footer">
+      <div class="container">
+        <Span>&copy; Copyright 2018 Kean Amaral</Span>
+      </div>
+    </footer>
+  </div>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+  <!-- jQuery, Bootstrap javascript CDN files -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!-- Bootstrap-Powered HTML Page About-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Kean</title>
+  <link rel="stylesheet" type="text/css" href="AssetsHW2Bootstrap/CSSHW2Bootstrap/Reset.css">
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+  body{
+    background-image: url("AssetsHW2Bootstrap/ImagesHW2Bootstrap/naturalwhitebackground.png");
+  }
+  .navbar{
+    height: 50px;
+  }
+  #nameNav{
+    background: #4aaaa5;
+    color: #ffffff;
+    margin-left: 2px;
+  }
+  .nav-link{
+    background: #ffffff;
+    align-items: right;
+  }
+  #aboutContainer{
+    margin-top: 50px;
+  }
+  #titleAboutMe{
+    color: #4aaaa5;
+    background: #ffffff;
+  }
+  #HeaderAboutme{
+    border-bottom: 1px solid lightgrey;
+  }
+  #rowAboutMeContents{
+    color: #666666;
+    background: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .list-group-item{
+    text-align: center;
+    align-items: center;
+    color: #4aaaa5;
+  }
+  #footerContainer{
+    bottom: 0;
+    position: fixed;
+  }
+  .footer{
+    background: #666666;
+    height: 60px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 5px solid #4aaaa5;
+    padding: 20px;
+  }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" id="nameNav" href="#">Kean Amaral</a>
+              <button class="navbar-toggle" type="button" data-toggle="collapse" 
+                  data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="#" Title="Page About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="HW2_bootstrap_portfolio.html" Title="Page Portfolio">| Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="HW2_bootstrap_contact.html" Title="Page Contact">| Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <div class ="container" id="aboutContainer">
+    <div class="col-md-9" id="titleAboutMe">
+      <h1 id="HeaderAboutme">About Me</h1>
+      <div class="row" id="rowAboutMeContents">
+        <div class="col-md-3">
+          <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/KeanPic.jpg" 
+            alt="Kean Amaral" title="Kean Amaral" id="bio-image"
+            height=140 width=140/>
+        </div>
+        <div class="col-md-9">
+          <p class="text-left">
+            In 2018, I joined Rutgers Coding Bootcamp because I believed that the world could 
+            be more fun through the internet and learning how to create fun games and tools 
+            online.  Now I have the freedom to customize what people are really interested 
+            in on a world-class technology platform that allows me to address virtually 
+            any need, challenge or opportunity clients have.<br>
+          </p>
+          <p class="text-left">
+            My investment career has spanned two decades,
+            during which I’ve worked on the institutional side of the industry,
+            and as a financial advisor at leading wealth management institutions. <br>
+            <a href=#a>www.keanamaral.com</a> <br>
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-3">
+        <ul class="list-group" id="connectWithMe">
+          <li class="list-group-item">
+            Connect with Me
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://www.facebook.com" target="blank">
+                  <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/facebook.png" height="50px" width="50px"
+                  alt="Facebook" title="Click to Facebook">
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="https://www.linkedin.com" target="_blank">
+                  <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/linkedin.png" height="50px" width="50px"
+                  alt=LinkedIn title="Click to LinkedIn">
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/twitter.png" height="50px" width="50px"
+                  alt="Twitter" title="Click to Twitter">
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" id="footerContainer">
+    <footer class="footer">
+      <div class="container">
+        <Span>&copy; Copyright 2018 Kean Amaral</Span>
+      </div>
+    </footer>
+  </div>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+  <!-- jQuery, Bootstrap javascript CDN files -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

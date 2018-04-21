@@ -1,0 +1,201 @@
+<!-- Bootstrap-Powered HTML Page Portfolio-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kean's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="AssetsHW2Bootstrap/CSSHW2Bootstrap/Reset.css">
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+  body{
+    background-image: url("AssetsHW2Bootstrap/ImagesHW2Bootstrap/naturalwhitebackground.png");
+  }
+  .navbar{
+    height: 50px;
+  }
+  #nameNav{
+    background: #4aaaa5;
+    color: #ffffff;
+    margin-left: 2px;
+  }
+  .nav-link{
+    background: #ffffff;
+    align-items: right;
+  }
+  #portfolioContainer{
+    margin-top: 50px;
+  }
+  #titlePortfolio{
+    color: #4aaaa5;
+    background: #ffffff;
+  }
+  #HeaderPortfolio{
+    border-bottom: 1px solid lightgrey;
+  }
+  #rowPortfolioContents{
+    color: #666666;
+    background: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .col-md-6{
+    margin-bottom: 20px;
+  }
+  .bottom-center{
+    position:absolute;
+    left:32%;
+    bottom: 10px;
+    width: 150px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding:10px;
+    font-size: 15px;
+  }
+  .list-group-item{
+    text-align: center;
+    color: #4aaaa5;
+  }
+  #footerContainer{
+    bottom: 0;
+    position: fixed;
+  }
+  .footer{
+    background: #666666;
+    height: 60px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 5px solid #4aaaa5;
+    padding: 20px;
+  }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" id="nameNav" href="#">Kean Amaral</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="HW2_bootstrap_about.html" Title="Page About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" Title="Page Portfolio">| Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="HW2_bootstrap_contact.html" Title="Page Contact">| Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+  <div class ="container" id="portfolioContainer">
+      <div class="col-md-9" id="titlePortfolio">
+          <h1 id="HeaderPortfolio">Portfolio</h1>
+          <div class="row" id="rowPortfolioContents">
+            <div class="col-md-6">
+              <a href="https://www.coolmath-games.com" target="_blank">
+              <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/hangman.jpg" 
+                alt="Hangman" title="Hangman" id="hangman"
+                height="150px" width="150px"/>
+              <div class="bottom-center">Hangman</div>
+            </div>
+            <div class="col-md-6">
+              <a href="https://armorgames.com/category/rpg-games" target="_blank">
+              <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/RPG Game.png" 
+                alt="RPG Game" title="RPG Game" id="rpg_game"
+                height="150px" width="150px"/>
+              <div class="bottom-center">RPG Game</div>
+            </div>
+            <div class="col-md-6">
+              <a href="http://trivia.fyi/" target="_blank">
+              <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/Trivia.png" 
+                alt="Trivia Game" title="Trivia Game" id="trivia"
+                height="150px" width="150px"/>
+              <div class="bottom-center">Trivia Game</div>
+            </div>
+            <div class="col-md-6">
+              <a href="https://www.rutgers.edu" target="_blank">
+              <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/Rutgers.png" 
+                alt="Rutger's Info Widget" title="Rutger's Info Widget" id="rutgers"
+                height="150px" width="150px"/>
+              <div class="bottom-center">Rutgers Info Widget</div>
+            </div>
+            <div class="col-md-6">
+              <a href="https://rockpaperscissors.com" target="_blank">
+              <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/RockPaperScissors.png" 
+                alt="Rock Paper Scissors" title="Rock Paper Scissors" id="rockpaper"
+                height="150px" width="150px"/>
+              <div class="bottom-center">Rock Paper Scissors</div>
+            </div>
+            <div class="col-md-6">
+              <a href="https://keanamaral.github.io/StockJock/" target="_blank">
+              <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/stockjock.png" 
+                alt="Project Stockjock" title="Project Stockjock" id="stockjock"
+                height="150px" width="150px"/>
+              <div class="bottom-center">Project Stockjock</div>
+            </div>
+            </div>
+          </div>
+      <div class="col-md-3">
+          <ul class="list-group" id="connectWithMe">
+            <li class="list-group-item">
+              Connect with Me
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="https://www.facebook.com" target="blank">
+                    <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/facebook.png" height="50px" width="50px"
+                    alt="Facebook" title="Click to Facebook">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.linkedin.com" target="_blank">
+                    <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/linkedin.png" height="50px" width="50px"
+                    alt=LinkedIn title="Click to LinkedIn">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.twitter.com" target="_blank">
+                    <img src="AssetsHW2Bootstrap/ImagesHW2Bootstrap/twitter.png" height="50px" width="50px"
+                    alt="Twitter" title="Click to Twitter">
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer" id="footerContainer">
+    <footer class="footer">
+      <div class="container">
+        <Span>&copy; Copyright 2018 Kean Amaral</Span>
+      </div>
+    </footer>
+  </div>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+  <!-- jQuery, Bootstrap javascript CDN files -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
